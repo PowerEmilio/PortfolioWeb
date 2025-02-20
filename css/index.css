@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-color: #06100c;
+    --background-color2: #174634;
+    --color-primary-dark: #06100C;
+    --color-primary-light: #CFE8DC;
+
+    --acent-color: #FFC107;
+}
+
+.bodyContainer{
+    display: flex;
+    width: 100%;
+    height: calc(100vh);
+    background-color: var(--background-color);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.flex-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.body1{
+    height: calc(100vh - 3rem);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: var(--background-color2);
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.laburoCard{
+    background-color: var(--background-color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: none;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+
+}
+.laburoCard h1{
+    color: var(--acent-color);
+    padding: 1rem;
+    text-align: center;
+}
+.laburoCard_text{
+    color: var(--color-primary-light);
+    padding: 1rem;
+    text-align: center;
+}
+.laburoCard:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+
+
+
+.laburoCard_btn{
+    content-visibility: hidden;
+    text-transform: uppercase;
+    opacity: 0;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    background-color: var(--color-primary-light);
+    color: var(--background-color2);
+    text-decoration: none;
+    transition: all 0.2s;
+    border-bottom-left-radius: 15px;  
+    border-bottom-right-radius: 15px;  
+}
+.laburoCard_btn a{
+    text-decoration: none;
+    color: var(--background-color2);
+}
+
+
+
+.laburoCard_btn:hover{
+    cursor: pointer;
+}
+.laburoCard:hover .laburoCard_btn{
+    content-visibility: visible;
+    padding: 0.5rem 1rem;
+    height: 30px;
+    opacity: 1;
+    text-align: center;
+}
+
+
+
+#profilePic {
+    position: absolute;
+    right: 0;
+    bottom: 10;
+    width: auto;
+    height: 50dvw;
+    min-height: 500px;
+}
+
+
+
+
+
+
+

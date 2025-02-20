@@ -1,0 +1,273 @@
+:root {
+    --background-color: #06100c;
+    --background-color2: #174634;
+    --color-primary-dark: #06100C;
+    --color-primary-light: #CFE8DC;
+
+    --acent-color: #FFC107;
+}
+
+
+.bodyContainer2{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    min-height: 100dvh;
+    border-top: solid 1px var(--acent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(180deg, #0b0610 0%, #170024 100%);
+    z-index: 1;
+    position: relative;
+    gap: 2rem;
+}
+.d-block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects_title{
+    color: #f1f1f1;
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.projectCard{
+    height: 400px; width: 500px;
+    border-radius: 25px; 
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.projectCard:hover{
+    transform: scale(1.03);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.projectCard:hover .projectCard_footer{
+    content-visibility: visible;
+    height: 20%;
+    opacity: 1;
+    padding-left: 1rem;
+    border-bottom: 2px solid #f1f1f1;
+    border-left: 2px solid #f1f1f1;
+    border-right: 2px solid #f1f1f1;
+    transition: all 0.3s;
+}
+.projectCard:hover .projectCard_image{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all 0.3s;
+}
+.projectCard_header{
+    height: 20%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background: linear-gradient(90deg, #0D47A1 0%, #4A148C 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f1f1f1;
+}
+.projectCard_header .everest {
+    background-color: #00405E;
+}
+.projectCard_header h1 {
+    color: white;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+.projectCard_header h2 {
+    color: rgba(245, 245, 245, .8);
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+.projectCard_image{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #f1f1f1;
+    border-right: 2px solid #f1f1f1;
+    border-left: 2px solid #f1f1f1;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.projectCard_image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 30%;
+}
+.projectCard_footer{
+    content-visibility: hidden;
+    height: 0;
+    opacity: 0;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #111;
+    transition: all 0.3s;
+}
+
+.projectCard_btn{
+    height: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: #f1f1f1;
+    margin-right: 1rem;
+}
+.projectCard_btn:hover{
+    background: linear-gradient(90deg, #0D47A1 0%, #4A148C 100%);
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+.gymLibrary_btn:hover{
+    background: linear-gradient(90deg, #3323D9 0%, #1A1370 100%);
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+.everest_btn:hover{
+    background: none;
+    background-color: #00405E;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+.fa-brands, .fa-solid{
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    border-radius: 1000px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+.fa-flutter:hover{
+    color: #03A9f4;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: rgba(241, 241, 241, .2);
+}
+.fa-dart-lang:hover{
+    color: #4597ce;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: rgba(241, 241, 241, .2);
+}
+.fa-database:hover{
+    color: var(--acent-color);
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: rgba(241, 241, 241, .2);
+}
+.fa-fire:hover{
+    color: #F5820D;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: rgba(241, 241, 241, .2);
+}
+.fa-php:hover{
+    color: #B0B3D6;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: rgba(241, 241, 241, .2);
+}
+
+
+.gymLibrary{
+    background: linear-gradient(90deg, #3323D9 0%, #1A1370 100%);
+}
+.everest{
+    background: none;
+    background-color: #00405E;
+}
+
+
+@media screen and (max-width: 768px){
+    .bodyContainer2{
+        gap: 1rem;
+    }
+    .projectCard{
+        height: 300px; width: 400px;
+        padding: 10px;
+    }
+    .projectCard:hover{
+        height: 300px; width: 400px;
+        padding: 10px;
+        transform: scale(1);
+    }
+    .projectCard_header h1 {
+        font-size: 1.5rem;
+    }
+    .projectCard_header h2 {
+        font-size: 0.8rem;
+    }
+    .projectCard_image{
+        height: 50%;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .projectCard_footer{
+        content-visibility: visible;
+        opacity: 1;
+        height: 20%;
+        border-bottom: 2px solid #f1f1f1;
+        border-left: 2px solid #f1f1f1;
+        border-right: 2px solid #f1f1f1;
+    }
+    .projectCard_btn{
+        height: 50%;
+        width: 30%;
+    }
+    .projects_title{
+        padding: 0;
+    }
+
+
+
+    .fa-brands, .fa-solid{
+        font-size: 1.2rem;
+    }
+
+    .fa-flutter{
+        color: #03A9f4;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .fa-dart-lang{
+        color: #4597ce;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .fa-database{
+        color: var(--acent-color);
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .fa-fire{
+        color: #F5820D;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .fa-php{
+        color: #B0B3D6;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+}
